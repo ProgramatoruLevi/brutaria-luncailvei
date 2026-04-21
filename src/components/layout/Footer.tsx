@@ -12,12 +12,22 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Column 1 - Logo & Description */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-block mb-4">
-              <img
-                src={siteConfig.logoPath}
-                alt={siteConfig.name}
-                className="h-16 w-auto brightness-0 invert"
-              />
+            <Link to="/" className="inline-flex items-center gap-3 mb-5 group">
+              <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-background shadow-lg ring-2 ring-accent/40 p-1.5 group-hover:scale-105 transition-transform duration-300">
+                <img
+                  src={siteConfig.logoPath}
+                  alt={siteConfig.name}
+                  className="h-full w-auto object-contain"
+                />
+              </span>
+              <span className="flex flex-col leading-tight">
+                <span className="font-serif text-lg font-bold text-white tracking-tight">
+                  Brutăria
+                </span>
+                <span className="font-serif text-sm italic text-accent -mt-0.5">
+                  Lunca Ilvei
+                </span>
+              </span>
             </Link>
             <p className="text-sm text-white/70 leading-relaxed">
               Pâine proaspătă și produse de patiserie făcute cu grijă, din ingrediente atent alese, pentru tine și familia ta.

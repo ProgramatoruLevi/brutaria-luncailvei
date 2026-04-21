@@ -143,7 +143,7 @@ export const products: Product[] = [
     shortDescription: 'Covrigi pufoși cu sare sau susan, proaspăt cocinați.',
     longDescription: 'Covrigii noștri tradițional sunt preparați din aluat moale, opărit și cocinați zilnic. Poți alege varianta cu sare, susan sau mac. Textura lor unică — crocantă la exterior și moale în interior — îi face un favorit al clienților noștri de toate vârstele.',
     category: 'specialitati',
-    image: 'https://images.unsplash.com/photo-1586444248902-2367d0ee9cd8?w=600&h=400&fit=crop',
+    image: '/covrig-traditional.jpg',
     tags: ['traditional'],
     featured: false,
     seasonal: false,

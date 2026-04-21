@@ -15,7 +15,8 @@ export const siteConfig = {
     country: 'România',
     full: 'Strada Principală nr. 42, Lunca Ilvei, Bistrița-Năsăud',
   },
-  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21576.0!2d24.92!3d47.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4735b0!2sLunca+Ilvei!5e0!3m2!1sen!2sro!4v1',
+  mapEmbedUrl: 'https://maps.google.com/maps?q=Brut%C4%83ria+Lunca+Ilvei,+Lunca+Ilvei,+Bistri%C8%9Ba-N%C4%83s%C4%83ud&hl=ro&z=16&output=embed',
+  mapLink: 'https://www.google.com/maps/search/?api=1&query=Brut%C4%83ria+Lunca+Ilvei',
   schedule: {
     weekdays: 'Luni - Vineri: 06:00 - 20:00',
     saturday: 'Sâmbătă: 07:00 - 18:00',

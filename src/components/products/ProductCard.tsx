@@ -21,7 +21,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
     <Link
       to={`/produse/${product.slug}`}
       className={cn(
-        'group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col',
+        'group bg-surface rounded-2xl overflow-hidden shadow-sm ring-1 ring-border/40 hover:shadow-xl hover:shadow-secondary/10 hover:-translate-y-1 hover:ring-primary/20 transition-all duration-300 cursor-pointer flex flex-col',
         className
       )}
     >
@@ -29,11 +29,12 @@ export function ProductCard({ product, className }: ProductCardProps) {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
         {product.tags.length > 0 && (
-          <div className="absolute top-3 left-3 flex gap-1.5">
+          <div className="absolute top-3 left-3 flex flex-col items-start gap-1.5">
             {product.tags.slice(0, 2).map((tag) => {
               const config = tagConfig[tag]
               if (!config) return null

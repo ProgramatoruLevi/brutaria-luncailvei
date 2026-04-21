@@ -6,6 +6,7 @@ import { ProcessSection } from '@/components/home/ProcessSection'
 import { Gallery } from '@/components/home/Gallery'
 import { ContactCTA } from '@/components/home/ContactCTA'
 import { ContactPreview } from '@/components/home/ContactPreview'
+import { OrnamentDivider } from '@/components/ui/OrnamentDivider'
 import { SEOHead } from '@/components/shared/SEOHead'
 import { LocalBusinessSchema } from '@/components/shared/StructuredData'
 
@@ -18,6 +19,9 @@ export function HomePage() {
       <FeaturedProducts />
       <SeasonalProducts />
       <AboutPreview />
+      <div className="container-main">
+        <OrnamentDivider className="my-2" />
+      </div>
       <ProcessSection />
       <Gallery />
       <ContactCTA />
