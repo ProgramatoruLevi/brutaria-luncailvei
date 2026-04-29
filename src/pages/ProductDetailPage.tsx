@@ -105,9 +105,33 @@ export function ProductDetailPage() {
                 {product.name}
               </h1>
 
+              {product.weight && (
+                <p className="text-sm uppercase tracking-[0.2em] text-accent-dark font-semibold mb-4">
+                  Gramaj · {product.weight}
+                </p>
+              )}
+
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 {product.longDescription}
               </p>
+
+              {product.variants && product.variants.length > 0 && (
+                <div className="mb-8">
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-3">
+                    Variante disponibile
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {product.variants.map((v) => (
+                      <span
+                        key={v}
+                        className="inline-flex items-center px-4 py-2 rounded-full bg-surface ring-1 ring-accent/40 text-sm font-medium text-secondary-dark shadow-sm"
+                      >
+                        {v}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {product.availabilityNote && (
                 <div className="relative bg-gradient-to-r from-accent/20 via-accent/10 to-transparent rounded-xl px-5 py-3.5 mb-8 ring-1 ring-accent/30">

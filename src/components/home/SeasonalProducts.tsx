@@ -20,14 +20,14 @@ export function SeasonalProducts() {
       <div className="container-main relative">
         <Reveal className="text-center mb-14">
           <div className="mb-5">
-            <SectionEyebrow>Produse de sezon</SectionEyebrow>
+            <SectionEyebrow>Cozonacii noștri</SectionEyebrow>
           </div>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 tracking-tight">
             Gustul sărbătorilor
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
-            Sărbătorește tradițiile cu produsele noastre speciale, pregătite
-            cu drag pentru momentele importante din viața ta.
+            Cozonaci pufoși, frământați manual și copți după rețeta tradițională.
+            Disponibili în mai multe variante — cu nucă, mac, rahat sau ciocolată.
           </p>
         </Reveal>
 

@@ -7,7 +7,7 @@ import { SectionEyebrow } from '@/components/ui/SectionEyebrow'
 import { Reveal } from '@/components/ui/Reveal'
 import { cn } from '@/lib/utils'
 
-const allCategories: (ProductCategory | 'toate')[] = ['toate', 'paine', 'patiserie', 'cozonaci', 'sezon', 'specialitati']
+const allCategories: (ProductCategory | 'toate')[] = ['toate', 'paine', 'cozonaci', 'patiserie']
 
 export function ProdusePage() {
   const [activeCategory, setActiveCategory] = useState<ProductCategory | 'toate'>('toate')

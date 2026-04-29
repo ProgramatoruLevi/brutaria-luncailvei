@@ -55,7 +55,7 @@ export function Hero() {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif text-4xl sm:text-5xl lg:text-[4rem] font-bold text-white leading-[1.05] tracking-tight mb-6"
             >
-              Pâine proaspătă și patiserie <span className="italic text-accent-light">făcute cu grijă</span>
+              Pâine, cozonaci și patiserie <span className="italic text-accent-light">făcute cu grijă</span>
             </motion.h1>
 
             <motion.p

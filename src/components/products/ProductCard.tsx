@@ -48,9 +48,16 @@ export function ProductCard({ product, className }: ProductCardProps) {
         )}
       </div>
       <div className="p-5 flex flex-col flex-1">
-        <h3 className="font-serif text-lg font-semibold text-foreground mb-1.5 group-hover:text-primary transition-colors duration-200">
-          {product.name}
-        </h3>
+        <div className="flex items-start justify-between gap-3 mb-1.5">
+          <h3 className="font-serif text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-200">
+            {product.name}
+          </h3>
+          {product.weight && (
+            <span className="shrink-0 inline-flex items-center px-2 py-0.5 rounded-full bg-accent/15 text-[11px] font-semibold uppercase tracking-wider text-accent-dark mt-1">
+              {product.weight}
+            </span>
+          )}
+        </div>
         <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
           {product.shortDescription}
         </p>
