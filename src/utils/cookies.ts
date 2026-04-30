@@ -31,6 +31,8 @@ export const getCookiePreferences = (): CookiePreferences | null => {
   return null
 }
 
+export const COOKIE_PREFS_EVENT = 'cookie-preferences-changed'
+
 export const saveCookiePreferences = (prefs: CookiePreferenceInput) => {
   if (typeof window === 'undefined') return
 
@@ -41,6 +43,7 @@ export const saveCookiePreferences = (prefs: CookiePreferenceInput) => {
   }
 
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload))
+  window.dispatchEvent(new CustomEvent(COOKIE_PREFS_EVENT, { detail: payload }))
 }
 
 export const clearCookiePreferences = () => {

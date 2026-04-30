@@ -1,9 +1,26 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { MapPin, ExternalLink } from 'lucide-react'
 import { siteConfig } from '@/config/site'
+import { COOKIE_PREFS_EVENT, getCookiePreferences } from '@/utils/cookies'
+
+function hasMapConsent() {
+  const prefs = getCookiePreferences()
+  return Boolean(prefs && (prefs.marketing || prefs.analytics))
+}
 
 export function MapEmbed() {
   const [showMap, setShowMap] = useState(false)
+
+  useEffect(() => {
+    if (hasMapConsent()) setShowMap(true)
+
+    const handler = () => {
+      if (hasMapConsent()) setShowMap(true)
+    }
+
+    window.addEventListener(COOKIE_PREFS_EVENT, handler)
+    return () => window.removeEventListener(COOKIE_PREFS_EVENT, handler)
+  }, [])
 
   return (
     <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-accent/30 h-full min-h-[380px] bg-muted/40">
