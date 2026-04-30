@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { footerNavigation } from '@/config/navigation'
+import anpcSal from '@/assets/anpc-sal.svg'
+import anpcSol from '@/assets/anpc-sol.svg'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -29,9 +31,31 @@ export function Footer() {
                 </span>
               </span>
             </Link>
-            <p className="text-sm text-white/70 leading-relaxed">
+            <p className="text-sm text-white/70 leading-relaxed mb-5">
               Pâine proaspătă și produse de patiserie făcute cu grijă, din ingrediente atent alese, pentru tine și familia ta.
             </p>
+
+            {/* ANPC badges */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://anpc.ro/ce-este-sal/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="ANPC - Soluționarea Alternativă a Litigiilor"
+                className="inline-flex items-center justify-center bg-white rounded-md p-1.5 ring-1 ring-white/20 hover:ring-accent transition"
+              >
+                <img src={anpcSal} alt="ANPC SAL" className="h-9 w-auto" />
+              </a>
+              <a
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="ANPC - Soluționarea Online a Litigiilor"
+                className="inline-flex items-center justify-center bg-white rounded-md p-1.5 ring-1 ring-white/20 hover:ring-accent transition"
+              >
+                <img src={anpcSol} alt="ANPC SOL" className="h-9 w-auto" />
+              </a>
+            </div>
           </div>
 
           {/* Column 2 - Navigare */}
@@ -50,6 +74,42 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+
+            <h3 className="font-serif text-lg font-semibold mt-7 mb-4 text-white">
+              Linkuri utile
+            </h3>
+            <ul className="space-y-2.5">
+              <li>
+                <a
+                  href="https://anpc.ro/ce-este-sal/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-white/70 hover:text-accent transition-colors duration-200"
+                >
+                  ANPC — Soluționarea Alternativă a Litigiilor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ec.europa.eu/consumers/odr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-white/70 hover:text-accent transition-colors duration-200"
+                >
+                  ANPC — Soluționarea Online a Litigiilor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ec.europa.eu/consumers/odr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-white/70 hover:text-accent transition-colors duration-200"
+                >
+                  Platforma ODR — Uniunea Europeană
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -109,10 +169,11 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 pt-4 border-t border-white/10">
+            <div className="mt-6 pt-4 border-t border-white/10 space-y-1">
               <p className="text-xs text-white/50">{siteConfig.company.name}</p>
               <p className="text-xs text-white/50">CUI: {siteConfig.company.cui}</p>
               <p className="text-xs text-white/50">Reg. Com.: {siteConfig.company.regCom}</p>
+              <p className="text-xs text-white/50">EUID: {siteConfig.company.euid}</p>
             </div>
           </div>
         </div>

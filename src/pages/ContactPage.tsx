@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { SEOHead } from '@/components/shared/SEOHead'
 import { SectionEyebrow } from '@/components/ui/SectionEyebrow'
 import { Reveal } from '@/components/ui/Reveal'
+import { MapEmbed } from '@/components/shared/MapEmbed'
 
 interface FormData {
   name: string
@@ -307,17 +308,8 @@ export function ContactPage() {
       <section className="pb-20 md:pb-28">
         <div className="container-main">
           <Reveal>
-            <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-accent/30 h-[400px]">
-              <iframe
-                src={siteConfig.mapEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Locația Brutăria Lunca Ilvei pe hartă"
-              />
+            <div className="h-[400px]">
+              <MapEmbed />
             </div>
           </Reveal>
         </div>

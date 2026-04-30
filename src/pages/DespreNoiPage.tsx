@@ -10,19 +10,19 @@ const processSteps = [
   {
     title: 'Selectarea ingredientelor',
     description: 'Fiecare ingredient este ales cu grijă de la furnizori locali de încredere. Folosim făină de calitate superioară, drojdie naturală și materii prime proaspete.',
-    image: 'https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=700&h=500&fit=crop',
+    image: '/galerie/brutarie-3.jpg',
     alt: 'Ingrediente proaspete pentru brutărie',
   },
   {
     title: 'Frământare și preparare',
     description: 'Aluatul este frământat cu răbdare și lăsat să crească natural, fără grabă și fără aditivi. Acest proces lent este secretul gustului autentic.',
-    image: 'https://images.unsplash.com/photo-1612392062422-ef19b42f74df?w=700&h=500&fit=crop',
+    image: '/galerie/brutarie-2.jpg',
     alt: 'Brutar frământând aluatul',
   },
   {
     title: 'Coacere și produse proaspete',
     description: 'Fiecare produs este copt la temperatura perfectă, în cuptoare tradiționale. Rezultatul: o crustă aurie, un miez pufos și un gust care te duce cu gândul la copilărie.',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&h=500&fit=crop',
+    image: '/produse/paine-de-casa-1kg.jpg',
     alt: 'Pâine proaspătă scoasă din cuptor',
   },
 ]
@@ -81,7 +81,7 @@ export function DespreNoiPage() {
               <div className="relative max-w-lg">
                 <div className="absolute -top-4 -right-4 w-full h-full rounded-2xl border-2 border-accent/40" aria-hidden="true" />
                 <img
-                  src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=700&h=500&fit=crop"
+                  src="/produse/paine-la-tava-600g.jpg"
                   alt="Brutăria Lunca Ilvei"
                   className="relative w-full rounded-2xl shadow-2xl object-cover aspect-[4/3] ring-1 ring-black/5"
                 />

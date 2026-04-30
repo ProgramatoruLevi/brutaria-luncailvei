@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site'
 import { Button } from '@/components/ui/Button'
 import { SectionEyebrow } from '@/components/ui/SectionEyebrow'
 import { Reveal } from '@/components/ui/Reveal'
+import { MapEmbed } from '@/components/shared/MapEmbed'
 
 export function ContactPreview() {
   return (
@@ -86,17 +87,8 @@ export function ContactPreview() {
 
           <Reveal delay={0.15}>
             <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-accent/30 h-[380px] lg:h-full min-h-[380px]">
-              <div className="absolute inset-0 ring-[6px] ring-surface pointer-events-none rounded-2xl" aria-hidden="true" />
-              <iframe
-                src={siteConfig.mapEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '380px' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Locația Brutăria Lunca Ilvei pe hartă"
-              />
+              <div className="absolute inset-0 ring-[6px] ring-surface pointer-events-none rounded-2xl z-10" aria-hidden="true" />
+              <MapEmbed />
             </div>
           </Reveal>
         </div>

@@ -64,7 +64,7 @@ export function AboutPreview() {
               <div className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-primary/10 blur-xl" aria-hidden="true" />
 
               <img
-                src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=700&h=500&fit=crop"
+                src="/produse/paine-la-tava-600g.jpg"
                 alt="Interior brutărie tradițională"
                 className="relative w-full rounded-2xl shadow-2xl object-cover aspect-[4/5] md:aspect-[4/3] ring-1 ring-black/5"
                 loading="lazy"

@@ -23,7 +23,7 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&h=1080&fit=crop&q=80"
+          src="/galerie/hero-paine.jpg"
           alt="Produse de brutărie proaspete"
           className="w-full h-full object-cover scale-105"
         />

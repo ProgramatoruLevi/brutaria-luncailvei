@@ -5,27 +5,27 @@ import { Reveal } from '@/components/ui/Reveal'
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&h=900&fit=crop',
+    src: '/produse/paine-de-casa-1kg.jpg',
     alt: 'Pâine proaspăt coaptă cu crustă aurie',
     className: 'col-span-2 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500&h=500&fit=crop',
+    src: '/galerie/brutarie-1.jpg',
     alt: 'Franzele aliniate pe raftul brutăriei',
     className: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1612392062422-ef19b42f74df?w=500&h=500&fit=crop',
+    src: '/galerie/brutarie-2.jpg',
     alt: 'Aluat frământat pentru cozonac',
     className: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500&h=500&fit=crop',
+    src: '/produse/cozonac-800g.jpg',
     alt: 'Cozonac tradițional cu nucă',
     className: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1568254183919-78a4f43a2877?w=500&h=500&fit=crop',
+    src: '/produse/paine-la-tava-600g.jpg',
     alt: 'Produse de patiserie artizanale',
     className: 'col-span-1 row-span-1',
   },

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /setari-cookie
+Disallow: /politica-confidentialitate
+Disallow: /termeni-conditii
+Disallow: /politica-cookies
+
+Sitemap: https://brutaria-luncailvei.ro/sitemap.xml
