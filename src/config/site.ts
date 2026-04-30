@@ -36,7 +36,7 @@ export const siteConfig = {
   seo: {
     title: 'Brutăria Lunca Ilvei — Pâine Proaspătă și Patiserie Tradițională',
     description: 'Brutăria Lunca Ilvei — pâine proaspătă, cozonaci tradiționali și patiserie. Ingrediente atent alese, preparate zilnic cu grijă în Lunca Ilvei, Bistrița-Năsăud.',
-    ogImage: '/covrig-traditional.jpg',
+    ogImage: '/og-image.jpg',
   },
 }
 
